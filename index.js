@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 //     credentials: true,
 //   })
 // );
-app.use(cors());
+app.use(cors({credentials: true}));
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
